@@ -1,0 +1,127 @@
+/* Start The Golble Rules*/
+* /* <== this universal selector targets all html elements on the page*/{
+    -webkit-box-sizing: border-box; /*<== this webkit property use for the WebKit-based browsers 
+    like (safari and chrome) also for specific the width and the height an element This means 
+    that adding padding or border to an element won't cause it to overflow its container*/
+    -moz-box-sizing: border-box; /* This property is specific to Firefox and also sets the
+     box model to "border-box.*/
+    box-sizing: border-box; /* This property is supported by modern browsers and sets the box 
+    model to "border-box." It's the standard way to achieve consistent sizing behavior across 
+    different browsers*/
+    /* 
+    the border-box this property use to determines how the widht and height of an element
+    are calculated.  In this model, the specified width or height includes the padding, border,
+     and content areas of the element. This means that adding padding or border to an element 
+     won't cause it to overflow its container
+    */
+  } 
+  body {
+    font-family: "Work Sans", sans-serif;
+    position: relative;
+  }
+  :root {
+    --main-color: black;
+    --second-color: #777;
+  }
+  /*Start ClassList*/
+  .fogot {
+    border: 1px solid rgb(246, 167, 167);
+    padding: 15px;
+    background-color: rgb(246, 167, 167);
+  }
+  .valid {
+    border: 1px solid rgb(206, 244, 189);
+    padding: 15px;
+    background-color: rgb(206, 244, 189);
+  }
+/*End ClassList*/
+/*start Login project*/
+.login-content {
+  position: absolute;
+  left: 50%;
+  top: 80px;
+  transform: translate(-50%, -50px);
+  background-color: #eee;
+  padding: 20px 40px;
+  box-shadow: 5px 5px 10px 2px rgb(0 0 0 / 0.8);
+}
+.login-content .content {
+  width: 100%;
+}
+.login-content .title {
+  margin: 0 0 15px;
+  font-weight: 800;
+  font-size: 40px;
+}
+.login-content .text-content {
+  margin: 0 0 20px;
+  color: var(--second-color);
+  font-size: 15px;
+}
+.login-content .user-information h2{
+  margin: 0 0 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.login-content .user-information .email {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  outline: none;
+  border: 1px solid var(--second-color);
+  border-radius: 3px;
+}
+.login-content .user-information .password{
+  width: 100%;
+  padding: 15px;
+  outline: none;
+  border: 1px solid var(--second-color);
+  border-radius: 3px;
+}
+.login-content .forgot-information{
+  font-weight: 800;
+}
+.login-content .btn {
+  flex-direction: column;
+  display: flex
+}
+.login-content .btn-login {
+  margin-bottom: 20px;
+  padding: 10px;
+  font-weight: 500;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  border-style: none;
+  cursor: pointer;
+  width: 100%;
+}
+.login-content a {
+  text-decoration: none;
+}
+.login-content .sign-in-with-google {
+  padding: 10px;
+  font-weight: 500;
+  color: black;
+  border-radius: 10px;
+  border: 1px solid var(--second-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+}
+.login-content .sign-in-with-google i {
+  margin-right: 10px;
+    font-size: 20px;
+}
+.login-content .sign-up {
+  margin: 20px 0 0;
+  color: var(--second-color);
+  font-size: 15px;
+} 
+.login-content .sign-up span {
+  font-weight: 800;
+  color: black;
+  cursor: pointer;
+}
